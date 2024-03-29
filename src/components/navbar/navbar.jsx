@@ -13,21 +13,22 @@ const Navbar = () => {
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.5 }}
                 >
-                    Why Hire Me?
+                    Why You Need Me?
                 </motion.span>
                 <div className="social">
-                    <a href="#">
-                        <img src="/facebook.png" alt="" />
+                    <a href="https://www.linkedin.com/in/jaesonjoseph/" target="_blank" rel="noopener noreferrer">
+                        <img src="/linkedIn.png" alt="" />
                     </a>
-                    <a href="#">
+                    <a href="https://github.com/jaeson-karter-joseph?tab=repositories" target="_blank" rel="noopener noreferrer" >
+                        <img src="/github.png" alt="" />
+                    </a>
+                    <a href="https://www.instagram.com/jc_capital_chase" target="_blank" rel="noopener noreferrer">
                         <img src="/instagram.png" alt="" />
                     </a>
-                    <a href="#">
-                        <img src="/youtube.png" alt="" />
+                    <a href="https://www.youtube.com/@JCCaptialChase" target="_blank" rel="noopener noreferrer">
+                        <img src="/youtube.png" alt="" target="_blank" rel="noopener noreferrer" />
                     </a>
-                    <a href="#">
-                        <img src="/dribbble.png" alt="" />
-                    </a>
+
                 </div>
             </div>
         </div>

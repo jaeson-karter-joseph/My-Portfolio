@@ -28,12 +28,13 @@ const items = [
 
 const Single = ({ item }) => {
     const ref = useRef();
-    const { scrollYProgress } = useScroll({ target: ref, 
+    const { scrollYProgress } = useScroll({
+        target: ref,
         // offset: ["start start", "end start"] 
     });
 
     const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
-    return <section >
+    return <section id={item.id}>
         <div className="container">
             <div className="wrapper">
                 <div className="imageContainer" ref={ref}>

@@ -30,7 +30,7 @@ const sliderVariants = {
         x: 0,
     },
     animate: {
-        x: "-220%",
+        x: "-570%",
         transition: {
             repeat: Infinity,
             repeatType: "mirror",
@@ -46,16 +46,18 @@ const Hero = () => {
             <div className="wrapper">
                 <motion.div className="textContainer" variants={textVariants} initial="initial" animate="animate">
                     <motion.h2 variants={textVariants}>JAESON KARTER JOSEPH</motion.h2>
-                    <motion.h1 variants={textVariants}> Web Developer and UI Designer</motion.h1>
+                    <motion.h1 variants={textVariants} whileHover={{ color: "rebeccapurple" }}> Full Stack Web Developer</motion.h1>
+                    <motion.h3 variants={textVariants}>React Angular <span className="button-text">•</span> MongoDB SQL <span className="button-text">•</span> NodeJS ASP.NET <span className="button-text">•</span>Azure AWS</motion.h3>
+
                     <motion.div className="buttons">
-                        <motion.button variants={textVariants}>See the Latest Works</motion.button>
-                        <motion.button variants={textVariants}>Contact Me </motion.button>
+                        <motion.button variants={textVariants} whileHover={{border : "1px solid orange"}}><a href="#1">See My Latest Works</a> </motion.button>
+                        <motion.button variants={textVariants} whileHover={{border : "1px solid orange"}}> <a href="#Contact">Contact Me</a>  </motion.button>
                     </motion.div>
                     <motion.img variants={textVariants} animate="scrollButton" src="/scroll.png" alt="" />
                 </motion.div>
             </div>
             <motion.div className="slidingTextContainer" variants={sliderVariants} initial="initial" animate="animate">
-                Writer Content Creator Influencer
+                UI/UX Designer AI Travel Fitness
             </motion.div>
             <div className="imageContainer">
                 <img src="/hero.png" alt="Hero Picture" />

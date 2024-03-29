@@ -134,10 +134,18 @@
     }
 
     .listContainer {
-        flex: 2;
+        flex: 1;
         display: flex;
-        max-width: 1366px;
+        max-width: 90%;
         margin: auto;
+
+        h2 {
+            margin-bottom: 3px;
+        }
+
+        span {
+            margin-bottom: 10px;
+        }
 
         @include mobile {
             flex-direction: column;
@@ -150,11 +158,11 @@
         }
 
         .box {
-            padding: 50px;
+            padding: 30px;
             border: 0.5px solid gray;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            width: 60%;
 
             @include mobile {
                 border: none;
@@ -178,6 +186,10 @@
                 @include tablet {
                     display: none;
                 }
+            }
+
+            li {
+                margin: 5px 0px;
             }
 
             button {
