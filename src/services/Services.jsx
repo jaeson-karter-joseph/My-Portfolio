@@ -106,7 +106,7 @@ const Services = () => {
                         <li>UI Design</li>
                         <li>Linux Commands and Shell Scripting</li>
                     </ul>
-                    <button> <a href="https://www.linkedin.com/in/jaesonjoseph/details/certifications/" target="_blank" rel="noopener noreferrer">See More Certificates</a> </button>
+                    <button> <a href="https://www.linkedin.com/in/jaesonjoseph/details/certifications/" target="_blank" rel="noopener noreferrer">See All Certificates</a> </button>
 
 
                 </motion.div>
@@ -128,6 +128,7 @@ const Services = () => {
                             Microservices, Docker</li>
                         <li><b> Interpersonal Skills:</b> Fluent Communication, Adaptability</li>
                     </ul>
+                    <button> <a href="https://www.linkedin.com/in/jaesonjoseph/details/skills/" target="_blank" rel="noopener noreferrer">See All Skills</a> </button>
            
                 </motion.div>
             </motion.div>

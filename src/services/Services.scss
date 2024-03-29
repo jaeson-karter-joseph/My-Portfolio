@@ -20,17 +20,17 @@
             flex-direction: column;
         }
 
-        @include tablet {
-            align-self: center;
-            text-align: center;
-            flex-direction: column;
-        }
+       
 
         p {
             font-weight: 200;
             font-size: 20px;
             color: gray;
             text-align: right;
+
+            @include mobile{
+                text-align: center;
+            }
         }
 
         hr {
@@ -40,6 +40,7 @@
 
             @include mobile {
                 width: 300px;
+                margin-bottom: 5px;
             }
 
             @include tablet {
@@ -165,18 +166,18 @@
             width: 60%;
 
             @include mobile {
-                border: none;
+                margin-top: 5px;
+                width: 100%;
+                justify-content: center;
                 align-items: center;
-                gap: 20px;
-                padding: 10px;
             }
 
-            @include tablet {
-                border: none;
-                align-items: center;
-                gap: 20px;
-                padding: 10px;
+            ul{
+                @include mobile {
+                    display: none;
+                }
             }
+
 
             p {
                 @include mobile {
@@ -205,6 +206,7 @@
                     color: orange;
                     width: 50%;
                     padding: 5px;
+                    margin-top: 5px;
                 }
 
                 @include tablet {

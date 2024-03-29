@@ -41,9 +41,13 @@
                 font-size: 30px;
                 color: rebeccapurple;
                 letter-spacing: 10px;
+
+                @include mobile {
+                    font-size: 20px;
+                }
             }
 
-            h3:hover{
+            h3:hover {
                 color: orange;
             }
 
@@ -51,16 +55,15 @@
                 font-size: 88px;
 
                 @include mobile {
-                    font-size: 36px;
+                    font-size: 20px;
                 }
 
-                @include tablet {
-                    font-size: 36px;
-                }
+
             }
 
             .buttons {
                 z-index: 999;
+
                 button {
                     padding: 20px;
                     border: 1px solid white;
@@ -70,7 +73,7 @@
                     margin-right: 20px;
                     cursor: pointer;
                     font-weight: 300;
-                    
+
                 }
             }
 
@@ -111,10 +114,8 @@
             object-fit: cover;
 
             @include mobile {
-                display: none;
+                margin-top: 14%;
             }
-
-
         }
     }
 
